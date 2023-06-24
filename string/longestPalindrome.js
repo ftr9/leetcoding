@@ -4,7 +4,6 @@ var longestPalindrome = function (s) {
 
   let initialIndex = 0;
 
-  //[1,2,3,4,1,6,7,8,9,10] ->
   while (initialIndex !== s.length - 1) {
     for (let i = s.length - 1; i > initialIndex; i--) {
       if (s[i] === s[initialIndex]) {
@@ -29,6 +28,3 @@ var longestPalindrome = function (s) {
 
   return palindrome;
 };
-
-const ans = longestPalindrome(`cbbd`);
-console.log(ans);
